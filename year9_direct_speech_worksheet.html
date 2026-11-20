@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Year 9 Worksheet: Punctuating Direct Speech</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f6f8fb;--card:#fff;--ink:#1c2733;--mute:#5b6b7b;--brand:#1f4e79;--line:#d5dee8;--tint:#eaf1fb;--warn:#fff4e5;--warnink:#7a3e00;--ok:#1b7a3d;--okbg:#e6f6ec;--bad:#b3261e;--badbg:#fdeceb;--star:#6a3fb5;--starbg:#f1eafb;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10161d;--card:#18212b;--ink:#e6edf3;--mute:#9aabbb;--brand:#8fbfef;--line:#2b3947;--tint:#19293a;--warn:#33281a;--warnink:#f0c27a;--ok:#6fd592;--okbg:#14301f;--bad:#ff8a80;--badbg:#3a1a18;--star:#c4a6f5;--starbg:#271c3b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10161d;--card:#18212b;--ink:#e6edf3;--mute:#9aabbb;--brand:#8fbfef;--line:#2b3947;--tint:#19293a;--warn:#33281a;--warnink:#f0c27a;--ok:#6fd592;--okbg:#14301f;--bad:#ff8a80;--badbg:#3a1a18;--star:#c4a6f5;--starbg:#271c3b;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:1.6rem;margin:.1em 0;color:var(--brand)}
+.sub{color:var(--mute);margin:0 0 14px;font-style:italic}
+.who{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;margin-bottom:8px}
+.who input{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit}
+.box{border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:14px 0;background:var(--tint)}
+.box.q{background:var(--warn)}
+.box h2{margin:0 0 8px;font-size:1.05rem;color:var(--brand)}
+.box.q h2{color:var(--warnink)}
+.box ul{margin:0;padding-left:20px}.box li{margin:4px 0}
+.ex{margin-top:10px;padding:10px 12px;background:var(--card);border-radius:8px;font-size:.95rem}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 0;display:flex;gap:10px;align-items:center;border-bottom:1px solid var(--line)}
+.prog{flex:1;height:10px;background:var(--line);border-radius:6px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:var(--ok);transition:width .3s}
+.score{font-weight:700;white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:14px 0}
+.card.ok{border-color:var(--ok)}.card.no{border-color:var(--bad)}
+.n{display:inline-block;background:var(--brand);color:var(--bg);border-radius:50%;min-width:28px;height:28px;text-align:center;line-height:28px;font-weight:700;font-size:.9rem;margin-right:8px}
+.src{margin:6px 0 10px;padding:10px 12px;background:var(--bg);border-radius:8px;font-family:ui-monospace,Consolas,monospace;font-size:.92rem;overflow-wrap:anywhere}
+textarea{width:100%;min-height:78px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;resize:vertical}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+button{font:inherit;padding:8px 14px;border-radius:8px;border:1px solid var(--brand);background:var(--brand);color:var(--bg);cursor:pointer;font-weight:600}
+button.alt{background:transparent;color:var(--brand)}
+.fb{margin-top:10px;padding:10px 12px;border-radius:8px;display:none}
+.fb.ok{display:block;background:var(--okbg);color:var(--ok)}
+.fb.no{display:block;background:var(--badbg);color:var(--bad)}
+.fb.show,.fb.hint{display:block;background:var(--tint);color:var(--ink)}
+.fb b{display:block;margin-bottom:2px}
+.chal{background:var(--starbg);color:var(--star);border-radius:12px;padding:12px 16px;margin:28px 0 6px;font-weight:700;letter-spacing:.04em}
+.chal span{display:block;font-weight:400;letter-spacing:0;font-size:.92rem}
+.sec{font-weight:700;color:var(--brand);margin:22px 0 0}
+#res{display:none}
+#res h2{margin-top:0}
+#res li{margin:3px 0}
+.rem{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:6;border-radius:24px;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+</style></head><body><main>
+<h1>Punctuating Direct Speech</h1>
+<p class="sub">Year 9 Worksheet · Technology: a Blessing or a Hindrance?</p>
+<div class="who"><input id="nm" placeholder="Name"><input id="cl" placeholder="Class"><input id="dt" placeholder="Date"></div>
+<section class="box" id="rem"><h2>📘 Remember: Rules for Direct Speech</h2><ul>
+<li><b>Quotation marks:</b> double marks around the spoken words only, not around the reporting verb (asked, replied, said).</li>
+<li><b>Reporting verb at the end:</b> the comma, question mark or exclamation mark goes inside the closing quotation marks, with no capital after it unless it is a name.</li>
+<li><b>Split in the middle of a sentence:</b> the second part begins with a small letter.</li>
+<li><b>Split between two sentences:</b> the second part begins with a capital letter.</li>
+<li><b>Quote within a quote:</b> single quotation marks inside the double ones.</li>
+<li><b>Capital letters:</b> the first word of every sentence, “I”, and names of people, countries and days.</li>
+<li><b>Exclamation marks:</b> only for strong feeling such as surprise or excitement.</li></ul>
+<div class="ex"><b>Worked example</b><br>that is true maya said but we must be careful<br>→ “That is true,” Maya said, “but we must be careful.”</div></section>
+<section class="box q"><h2>Question</h2>
+<p style="margin:0 0 8px">Maya and Omar are preparing for a school debate on the topic “Technology: a blessing or a hindrance?” Their dialogue below has been written without capital letters, correct spelling or punctuation marks. Rewrite each part using appropriate capitalization, spelling and punctuation marks.</p>
+<p style="margin:0;font-size:.92rem">Tips: type straight quotation marks (" and ') on your keyboard. Spelling mistakes are hidden in the text. Press <b>Hint</b> if you are stuck. (27 points: 24 parts + 3 challenge questions)</p></section>
+<div class="bar"><div class="prog"><i id="pb"></i></div><div class="score" id="sc">0 / 27</div></div>
+<div class="sec">Part A: Rewrite each part of the dialogue</div>
+<div id="list"></div>
+<div class="chal">★ CHALLENGE<span>Three harder questions. Take your time!</span></div>
+<div id="clist"></div>
+<p class="row" style="justify-content:center"><button id="fin">Finish and see my results</button><button class="alt" id="reset">Start again</button></p>
+<section class="box" id="res"></section>
+</main>
+<button class="rem" id="remb">📘 Remember</button>
+<script>
+var RAW=["do you think technology is a blessing or a hindrance maya asked", "honestly i think it is a hindrance omar replied people spend more time looking at screens than talking to each other", "that is true maya said but technology also connects families who live in diffrent countries", "yes omar admitted i video call my cousin in canada every sunday", "exactly maya exclaimed that is definately a blessing", "well i still believe it makes us lazy omar argued why walk to the libary when you can search everything online", "because the internet saves time maya answered students can research a topic in minutes instead of hours", "but is everything online reliable omar asked last week i read a fake news story that fooled half of my class", "that is a serious problem maya agreed however we can learn to check our sources", "fair point omar said what about the effect on our health", "do you mean sitting for too long maya inquired", "yes omar replied and staying awake late at night to play games", "i admit that is harmful maya said but fitness apps and smart watches help many people exercise", "i had not thought of that omar said doctors also use technology to save lives dont they", "they certainly do maya cried modern machines can detect deseases before any symptoms appear", "that is impressive omar confessed my grandfather always says too much of anything is good for nothing", "your grandfather is wise maya laughed the scientist and writer arthur c clarke once wrote any sufficiently advanced technology is indistinguishable from magic", "magic can also be dangerous omar warned if nobody teaches us how to use it responsibly", "then schools should teach digital safety maya suggested everyone would benefit", "i agree omar said perhaps technology is neither a blessing nor a hindrance by itself", "what do you mean maya asked", "i mean that it depends on us omar explained a tool is only as good as the person using it", "that is the wisest thing you have said all day maya laughed", "thank you omar replied with a smile now shall we start writing our debate speech"];
+var KEY=["“Do you think technology is a blessing or a hindrance?” Maya asked.", "“Honestly, I think it is a hindrance,” Omar replied. “People spend more time looking at screens than talking to each other.”", "“That is true,” Maya said, “but technology also connects families who live in different countries.”", "“Yes,” Omar admitted, “I video call my cousin in Canada every Sunday.”", "“Exactly!” Maya exclaimed. “That is definitely a blessing.”", "“Well, I still believe it makes us lazy,” Omar argued. “Why walk to the library when you can search everything online?”", "“Because the internet saves time,” Maya answered. “Students can research a topic in minutes instead of hours.”", "“But is everything online reliable?” Omar asked. “Last week I read a fake news story that fooled half of my class.”", "“That is a serious problem,” Maya agreed. “However, we can learn to check our sources.”", "“Fair point,” Omar said. “What about the effect on our health?”", "“Do you mean sitting for too long?” Maya inquired.", "“Yes,” Omar replied, “and staying awake late at night to play games.”", "“I admit that is harmful,” Maya said, “but fitness apps and smart watches help many people exercise.”", "“I had not thought of that,” Omar said. “Doctors also use technology to save lives, don’t they?”", "“They certainly do!” Maya cried. “Modern machines can detect diseases before any symptoms appear.”", "“That is impressive,” Omar confessed. “My grandfather always says, ‘Too much of anything is good for nothing.’”", "“Your grandfather is wise,” Maya laughed. “The scientist and writer Arthur C. Clarke once wrote, ‘Any sufficiently advanced technology is indistinguishable from magic.’”", "“Magic can also be dangerous,” Omar warned, “if nobody teaches us how to use it responsibly.”", "“Then schools should teach digital safety,” Maya suggested. “Everyone would benefit.”", "“I agree,” Omar said. “Perhaps technology is neither a blessing nor a hindrance by itself.”", "“What do you mean?” Maya asked.", "“I mean that it depends on us,” Omar explained. “A tool is only as good as the person using it.”", "“That is the wisest thing you have said all day!” Maya laughed.", "“Thank you,” Omar replied with a smile. “Now, shall we start writing our debate speech?”"];
+var CH=[{"t": "Add punctuation and capital letters. Put the reporting verb at the end.", "s": "wow omar exclaimed that video was amazing", "k": ["“Wow!” Omar exclaimed. “That video was amazing!”", "“Wow,” Omar exclaimed. “That video was amazing!”"], "h": "Two sentences of speech, split by the reporting verb. One shows strong feeling."}, {"t": "Rewrite as direct speech with the reporting verb at the end: Maya told Omar that she was going to the library after school.", "s": "Maya told Omar that she was going to the library after school.", "k": ["“I am going to the library after school,” Maya told Omar.", "“I’m going to the library after school,” Maya told Omar."], "h": "Change “she was going” into Maya’s exact words, in the first person and present tense."}, {"t": "Split the speech and add punctuation, with the reporting verb in the middle.", "s": "i think said omar that technology is useful if we use it wisely", "k": ["“I think,” said Omar, “that technology is useful if we use it wisely.”", "“I think,” Omar said, “that technology is useful if we use it wisely.”"], "h": "Split in the middle of one sentence: comma, reporting verb, comma, then a small letter."}];
+var N=RAW.length+CH.length,done={},shown={};
+function norm(s){return s.replace(/[\u2018\u2019]/g,"'").replace(/[\u201C\u201D]/g,'"').replace(/\s+/g," ").trim()}
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function hint(i){
+  if(i>=RAW.length)return CH[i-RAW.length].h;
+  var k=KEY[i],h;
+  if(/\u2018/.test(k))h="There is a quote within a quote: use single quotation marks inside the double ones.";
+  else if((k.match(/\u201C/g)||[]).length>1)h="This speech is split in two parts. Does the second part start with a capital or a small letter?";
+  else h="The reporting verb comes after the speech, so the punctuation goes inside the closing quotation marks.";
+  if(/!/.test(k))h+=" Think about strong feeling.";
+  if(/\?/.test(k))h+=" Part of this is a question.";
+  if(/diffrent|libary|definately|deseases/.test(RAW[i]))h+=" One word is spelt wrongly.";
+  return h;
+}
+function card(i,src,task,box){
+  var d=document.createElement("div");d.className="card";d.id="c"+i;
+  d.innerHTML='<div><span class="n">'+(i<RAW.length?i+1:"★"+(i-RAW.length+1))+'</span><b>'+task+'</b></div><div class="src">'+esc(src)+'</div><textarea id="t'+i+'" placeholder="Type your answer here" spellcheck="false" autocomplete="off"></textarea><div class="row"><button data-c="'+i+'">Check</button><button class="alt" data-h="'+i+'">Hint</button><button class="alt" data-s="'+i+'">Show answer</button></div><div class="fb" id="f'+i+'"></div>';
+  box.appendChild(d);
+}
+RAW.forEach(function(t,i){card(i,t,"Rewrite this part",document.getElementById("list"))});
+CH.forEach(function(c,j){card(RAW.length+j,c.s,esc(c.t),document.getElementById("clist"))});
+function keys(i){return i<RAW.length?[KEY[i]]:CH[i-RAW.length].k}
+function check(i,quiet){
+  var v=document.getElementById("t"+i).value,c=document.getElementById("c"+i),f=document.getElementById("f"+i);
+  if(!v.trim()){if(!quiet){f.className="fb no";f.innerHTML="<b>Nothing typed yet.</b>Write your answer first."}return}
+  var ok=keys(i).some(function(k){return norm(k)===norm(v)});
+  done[i]=ok&&!shown[i];c.className="card "+(ok?"ok":"no");
+  f.className="fb "+(ok?"ok":"no");
+  f.innerHTML=ok?(shown[i]?"<b>Correct.</b>No point, because you looked at the answer.":"<b>Correct! +1 point</b>Well done."):"<b>Not quite.</b>Check capitals, spelling, quotation marks, commas and end punctuation. Try again or press Hint.";
+  update();
+}
+function update(){
+  var n=0;for(var k in done)if(done[k])n++;
+  document.getElementById("sc").textContent=n+" / "+N;
+  document.getElementById("pb").style.width=(n/N*100)+"%";
+  return n;
+}
+document.addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b)return;
+  var f;
+  if(b.dataset.c!==undefined)check(+b.dataset.c);
+  if(b.dataset.h!==undefined){f=document.getElementById("f"+b.dataset.h);f.className="fb hint";f.innerHTML="<b>Hint</b>"+hint(+b.dataset.h)}
+  if(b.dataset.s!==undefined){var i=+b.dataset.s;shown[i]=true;done[i]=false;f=document.getElementById("f"+i);f.className="fb show";f.innerHTML="<b>Model answer</b>"+esc(keys(i)[0]);update()}
+});
+document.getElementById("remb").onclick=function(){document.getElementById("rem").scrollIntoView({behavior:"smooth"})};
+document.getElementById("fin").onclick=function(){
+  for(var i=0;i<N;i++)check(i,true);
+  var n=update(),p=Math.round(n/N*100),r=document.getElementById("res");
+  var msg=p>=81?"Excellent work! You are secure with direct speech.":p>=61?"Very good. Review the parts below and try again.":p>=41?"A good start. Re-read the Remember box and use the hints.":"Keep practising. Read the Remember box, then try each part again with the hints.";
+  var miss=[];for(var i=0;i<N;i++)if(!done[i])miss.push(i<RAW.length?i+1:"★"+(i-RAW.length+1));
+  var nm=document.getElementById("nm").value.trim(),cl=document.getElementById("cl").value.trim(),dt=document.getElementById("dt").value.trim();
+  r.style.display="block";
+  r.innerHTML="<h2>My Results</h2><p>"+[nm,cl,dt].filter(Boolean).map(esc).join(" · ")+"</p><p><b>Points: "+n+" / "+N+" ("+p+"%)</b></p><p>"+msg+"</p>"+(miss.length?"<p>Parts to review: "+miss.join(", ")+"</p>":"<p>Every part is correct!</p>");
+  r.scrollIntoView({behavior:"smooth"});
+};
+document.getElementById("reset").onclick=function(){
+  done={};shown={};
+  for(var i=0;i<N;i++){document.getElementById("t"+i).value="";document.getElementById("c"+i).className="card";document.getElementById("f"+i).className="fb"}
+  document.getElementById("res").style.display="none";update();window.scrollTo(0,0);
+};
+</script></body></html>
